@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+Pixelify AI 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pixelify AI is a modern web application that transforms images into retro-style pixel art. Upload any image, customize pixel size and color depth, preview the result in real time, and download your pixel art creation instantly.
 
-Currently, two official plugins are available:
+Features
+🖼️ Upload JPG, PNG, and WEBP images
+🎛️ Adjustable pixel size controls
+🎨 Custom color palette reduction
+⚡ Real-time pixel art preview
+💾 Download pixel art as PNG
+🔄 Before & after image comparison
+📱 Fully responsive design
+🌙 Modern dark-themed interface
+Tech Stack
+Frontend
+React
+TypeScript
+Vite
+Tailwind CSS
+Backend
+FastAPI
+Python
+Image Processing
+Pillow (PIL)
+NumPy
+OpenCV
+How It Works
+Upload an image.
+Choose pixel size and color settings.
+Generate pixel art instantly.
+Preview the result in real time.
+Download the final image.
+Installation
+git clone https://github.com/yourusername/pixelify-ai.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+cd pixelify-ai
 
-## React Compiler
+npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run dev
+Future Enhancements
+Retro gaming palettes (Game Boy, NES, SNES)
+Minecraft-style block art generation
+GIF to pixel art conversion
+Sprite sheet generator
+AI-powered palette suggestions
+Batch image processing
