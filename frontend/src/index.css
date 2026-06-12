@@ -1,9 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply antialiased text-neutral-100 bg-neutral-900;
-  }
+body {
+  @apply antialiased text-neutral-100 bg-neutral-900;
 }
